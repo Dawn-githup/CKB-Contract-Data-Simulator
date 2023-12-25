@@ -20,44 +20,12 @@ async function main() {
     const deployAccount = randomSecp256k1Account(GENESIS_CELL_PRIVATEKEYS[1]);
     let deployContractList = [
         {
-            contractName: "ANYONE_CAN_PAY",
-            contractPath: "source/contracts/ANYONE_CAN_PAY"
-        },
-        {
-            contractName: "CHEQUE",
-            contractPath: "source/contracts/cheque_lock"
-        },
-        {
-            contractName: "CLASS_TYPE",
-            contractPath: "source/contracts/ClassType"
-        },
-        {
-            contractName: "ISSUER_TYPE",
-            contractPath: "source/contracts/IssuerType"
-        },
-        {
-            contractName: "NFT_TYPE",
-            contractPath: "source/contracts/NFTType"
-        },
-        {
-            contractName: "NRC_721_FACTORY",
-            contractPath: "source/contracts/NRC_721_FACTORY"
-        },
-        {
-            contractName: "OMNI_LOCK",
-            contractPath: "source/contracts/omnilock"
-        },
-        {
             contractName: "SPORE",
             contractPath: "source/contracts/Spore"
         },
         {
             contractName: "SPORE_CLUSTER",
             contractPath: "source/contracts/SporeCluster"
-        },
-        {
-            contractName: "SUDT",
-            contractPath: "source/contracts/SUDT"
         },
     ]
     for (let i = 0; i < deployContractList.length; i++) {
