@@ -43,8 +43,6 @@ import {readFileSync, writeFileSync} from "fs";
 import * as fs from 'fs';
 import {LUMOS_CONFIG_PATH} from "./constants";
 import {ScriptValue} from "@ckb-lumos/base/lib/values";
-import {AGGRON4} from "../lumos/examples/secp256k1-transfer/lib";
-import {e2eProvider} from "./config";
 
 
 type LockScriptLike = Address | Script;
